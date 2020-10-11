@@ -13,6 +13,7 @@
  *      pm2 list            <- List current apps
  *      pm2 stop app        <- Stop an app
  *      pm2 restart app     <- Restart an app
+ *      pm2 delete app      <- Delete an app
  */
 
 var debug = false;
