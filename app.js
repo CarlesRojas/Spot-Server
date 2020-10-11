@@ -7,7 +7,13 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 
-// It is useing p2
+/**
+ * Using pm2 to keep the app running in AWS EC2
+ *      pm2 start app.js    <- Start app for the first time
+ *      pm2 list            <- List current apps
+ *      pm2 stop app        <- Stop an app
+ *      pm2 restart app     <- Restart an app
+ */
 
 var debug = false;
 var redirect_url = debug ? "http://localhost:3000" : "https://carlesrojas.github.io/Spot2";
