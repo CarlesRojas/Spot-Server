@@ -7,8 +7,10 @@
  * https://developer.spotify.com/web-api/authorization-guide/#authorization_code_flow
  */
 
-var redirect_url = "http://localhost:3000";
+// It is useing p2
+
 var debug = false;
+var redirect_url = debug ? "http://localhost:3000" : "https://carlesrojas.github.io/Spot2";
 
 var express = require("express"); // Express web server framework
 var bodyParser = require("body-parser");
