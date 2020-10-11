@@ -28,7 +28,7 @@ var cookieParser = require("cookie-parser");
 
 var client_id = "81a5e48f49d341f6a74d46187616330f"; // Your client id
 var client_secret = "7fe9bb8df3e14cdab6e62acb856b50cc"; // Your secret
-var redirect_uri = debug ? "http://localhost:8888/callback" : "http://ec2-18-191-231-228.us-east-2.compute.amazonaws.com:8888/callback"; // Your redirect uri
+var redirect_uri = debug ? "http://localhost:443/callback" : "https://ec2-18-191-231-228.us-east-2.compute.amazonaws.com:443/callback"; // Your redirect uri
 
 /**
  * Generates a random string containing numbers and letters
@@ -168,5 +168,5 @@ app.post("/refresh_token", function (req, res) {
     });
 });
 
-console.log("Listening on 8888");
-app.listen(8888);
+console.log("Listening on 443");
+app.listen(443);
